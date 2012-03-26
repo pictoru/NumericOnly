@@ -1,0 +1,9 @@
+div.section{
+    margin-bottom: 40px;
+}
+ul.config label{
+    font-weight: bold;
+}
+ul.config span{
+    display: inline-block
+}

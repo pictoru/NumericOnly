@@ -1,0 +1,138 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Numeric Only - jQuery Plugin</title>
+
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery.pictoru.NumberOnly.js"></script>
+
+    <script type="text/javascript">
+        $(function(){
+            $("#ex1").NumericOnly({value: 3.2});
+            $("#ex2").NumericOnly({step: 3.5});
+            $("#ex3").NumericOnly({minValue: -15, maxValue: 12.5});
+            $("#ex4").NumericOnly({float: false});
+        });
+    </script>
+</head>
+<body>
+
+In progress........
+
+<div id="description" class="section">
+    <h2>Description</h2>
+
+    <div class="info">
+        <p>This plugin try to limit the value of input fields to numeric only values. It has some default configuration that can be overwritten.</p>
+
+        <p>Default configuration:</p>
+        <ul class="config">
+            <li>
+                <label>step:</label>
+                <span>value used for increasing/decreasing the value of input</span>
+                <em>default: 1</em>
+            </li>
+            <li>
+                <label>float:</label>
+                <span>boolean indicating if the number can be float</span>
+                <em>default: true</em>
+            </li>
+            <li>
+                <label>minValue:</label>
+                <span>minimum value accepted</span>
+                <em>default: null</em>
+            </li>
+            <li>
+                <label>maxValue:</label>
+                <span>maximum value accepted</span>
+                <em>default: null</em>
+            </li>
+            <li>
+                <label>value:</label>
+                <span>the default value of the input</span>
+                <em>default: 0</em>
+            </li>
+        </ul>
+
+    </div>
+
+</div>
+
+<div id="usage" class="section">
+    <h2>Usage</h2>
+<pre>
+&lt;script type="text/javascript"&gt;
+    $(function(){
+        $("#ex3").NumericOnly({
+            minValue: -15,
+            maxValue: 12.5,
+            float: false,
+            step: 2.38,
+            value: 3.2
+        });
+    });
+&lt;/script&gt;
+</pre>
+</div>
+
+
+<div id="examples" class="section">
+    <h2>Examples</h2>
+
+    <div class="example" id="example1">
+        <h3>Default Behaviour</h3>
+
+        <div class="info">
+            <p>This is the default behaviour of the plugin</p>
+        </div>
+
+        <input type="text" id="ex1" />
+
+    </div>
+
+    <div class="example" id="example2">
+        <h3>Using step option</h3>
+
+        <div class="info">
+            <p>You can use either integer or float number</p>
+        </div>
+
+        <input type="text" id="ex2" />
+
+    </div>
+
+    <div class="example" id="example3">
+        <h3>minValue and maxValue</h3>
+
+        <div class="info">
+            <!--<p>You can use either integer or float number</p>-->
+        </div>
+
+        <input type="text" id="ex3" />
+
+    </div>
+
+    <div class="example" id="example4">
+        <h3>float</h3>
+
+        <div class="info">
+            <p>setting <b>float</b> as <b>false</b> will forbidd input value to be float number</p>
+        </div>
+
+        <input type="text" id="ex4" />
+
+    </div>
+</div>
+
+<div id="rights" class="section">
+    <h2>Developer</h2>
+    The plugin was developed by Ciprian Voicu // www.modernism.ro
+</div>
+
+
+</body>
+</html>

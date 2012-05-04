@@ -13,40 +13,7 @@
         value: 0
     };
 
-    var Keys = {
-        KEY_TAB: 9,
-        KEY_ESC: 27,
-        KEY_DELETE: 46,
-        KEY_BACKSPACE: 8,
-
-        KEY_CTRL: 17,
-        KEY_ALT: 18,
-        KEY_SHIFT: 16,
-
-        KEY_A: 65,
-        KEY_V: 86,
-        KEY_C: 67,
-
-        KEY_UP: 38,
-        KEY_LEFT: 37,
-        KEY_RIGHT: 39,
-        KEY_DOWN: 40,
-        KEY_HOME: 36,
-        KEY_END: 35,
-
-        KEY_DOT: 190,
-        KEY_NUM_DOT: 110,
-        KEY_MINUS: 109,
-        KEY_PLUS: 107,
-
-        KEY_0: 48,
-        KEY_9: 57,
-        KEY_NUM_0: 96,
-        KEY_NUM_9: 105
-
-    };
-
-    var methods = {
+     var methods = {
         init: function(options){
             return this.each(function () {
                 var $this = $(this),
@@ -68,7 +35,6 @@
 
                 $this.keydown(function(event) {
                     var code = event.keyCode;
-                    console.log(code);
 
                     // Allow: backspace, delete, tab and escape
                     if ( code == 46 || code == 8 || code == 9 || code == 27 ||

@@ -19,6 +19,9 @@
                 var $this = $(this),
                     $set = $.extend({}, defaults, options);
 
+                /** input value has priority before plugins settings */
+                if($this.val()) $set.value = parseInt($this.val());
+
                 $set.value = (typeof $set.value == 'number') ? $set.value : 0;
 
                 if(typeof $set.minValue == 'number' && $set.value < $set.minValue){
